@@ -18,10 +18,11 @@ package com.reallx.algrithm.dfs.permutation;
  *   [3,2,1]
  * ]
  *
- * 参考原题：https://leetcode-cn.com/problems/permutations/
+ * 参考原题：<a href="https://leetcode-cn.com/problems/permutations/">46</a>
+ *
  * @author liuh
  * @email hong.liu@dmall.com
  * @date 2020/9/7
  */
-public interface SimplePermutation {
+public interface L46_SimplePermutation {
 }

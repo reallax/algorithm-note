@@ -1,6 +1,6 @@
 package com.reallx.algrithm.dfs.permutation.impl;
 
-import com.reallx.algrithm.dfs.permutation.SimplePermutation;
+import com.reallx.algrithm.dfs.permutation.L46_SimplePermutation;
 
 import java.util.*;
 
@@ -9,7 +9,7 @@ import java.util.*;
  * @email hong.liu@dmall.com
  * @date 2020/9/7
  */
-public class SimplePermutationDfsImpl implements SimplePermutation {
+public class L46SimplePermutationDfsImpl implements L46_SimplePermutation {
 
 
     public static void main(String[] args) {
