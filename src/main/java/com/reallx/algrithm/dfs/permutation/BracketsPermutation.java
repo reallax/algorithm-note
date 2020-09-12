@@ -71,15 +71,22 @@ public class BracketsPermutation {
         }
 
         for (int i=0; i<len; i++) {
+            /**
+             * 剪枝处理，模拟L47
+             */
+            if (i > 0 && brackets[i].equals(brackets[i - 1]) && !used[i - 1]) {
+                continue;
+            }
+
             if (!used[i]) {
                 if (brackets[i].equals(leftBracket)) {
                     stack.push(brackets[i]);
                 } else {
                     String pop = stack.pollFirst();
-                    if (pop == null) {
-                        continue;
-                    }
-                    System.out.println("pop: " + stack.size());
+//                    if (pop == null) {
+//                        continue;
+//                    }
+//                    System.out.println("pop: " + stack.size());
                 }
 
                 path.addLast(brackets[i]);
