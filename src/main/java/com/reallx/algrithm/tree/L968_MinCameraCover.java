@@ -11,6 +11,7 @@ package com.reallx.algrithm.tree;
 public class L968_MinCameraCover {
 
     public static void main(String[] args) {
+        // 构造一棵树： [0,0,null,0,0]
         TreeNode root = new TreeNode(0);
         root.left = new TreeNode(0);
 
@@ -58,7 +59,7 @@ public class L968_MinCameraCover {
             return 2;
         }
 
-        // 左右节点只是被覆盖，本节点需要安装
+        // 左右节点只是被覆盖，本节点未被覆盖
         if (leftStatus == 1 && rightStatus == 1) {
             return 0;
         }
